@@ -567,7 +567,7 @@ const vi: PartialLocaleType = {
     ConfirmNoShow:
       "Xác nhận vô hiệu hóa? Sau khi vô hiệu hóa, bạn có thể bật lại bất cứ lúc nào trong cài đặt.",
     Title: "Chọn một chủ đề",
-    SubTitle: "Bắt đầu ngay, va chạm với suy nghĩ của linh hồn đứng sau chủ đề",
+    SubTitle: "Hãy chọn một chủ đề để AI bắt đầu hỗ trợ bạn học tập và khám phá",
     More: "Xem tất cả",
   },
 
