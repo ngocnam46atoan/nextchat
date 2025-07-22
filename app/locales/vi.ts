@@ -469,7 +469,7 @@ const vi: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Trò chuyện mới",
-    BotHello: "Có thể giúp gì cho bạn?",
+    BotHello: "Xin chào, mình là BiBi, một chatbot AI của trường Pétrus Ký, mình có thể giúp gì cho bạn hôm nay?",
     Error: "Đã xảy ra lỗi, vui lòng thử lại sau",
     Prompt: {
       History: (content: string) =>
