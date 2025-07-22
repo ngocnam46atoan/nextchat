@@ -30,10 +30,10 @@ const vi: PartialLocaleType = {
       "🥳 Ưu đãi ra mắt NextChat AI, mở khóa OpenAI o1, GPT-4o, Claude-3.5 và các mô hình lớn mới nhất ngay bây giờ",
   },
   ChatItem: {
-    ChatItemCount: (count: number) => `${count} cuộc trò chuyện`,
+    ChatItemCount: (count: number) => `${count} tin nhắn`,
   },
   Chat: {
-    SubTitle: (count: number) => `Tổng cộng ${count} cuộc trò chuyện`,
+    SubTitle: (count: number) => `Tổng cộng ${count} tin nhắn trò chuyện`,
     EditMessage: {
       Title: "Chỉnh sửa ghi chép tin nhắn",
       Topic: {
@@ -58,7 +58,7 @@ const vi: PartialLocaleType = {
     },
     Commands: {
       new: "Tạo cuộc trò chuyện mới",
-      newm: "Tạo cuộc trò chuyện từ mặt nạ",
+      newm: "Tạo cuộc trò chuyện từ chủ đề",
       next: "Cuộc trò chuyện tiếp theo",
       prev: "Cuộc trò chuyện trước đó",
       clear: "Xóa ngữ cảnh",
@@ -73,7 +73,7 @@ const vi: PartialLocaleType = {
         dark: "Chế độ tối",
       },
       Prompt: "Lệnh tắt",
-      Masks: "Tất cả mặt nạ",
+      Masks: "Tất cả chủ đề",
       Clear: "Xóa cuộc trò chuyện",
       Settings: "Cài đặt trò chuyện",
       UploadImage: "Tải lên hình ảnh",
@@ -90,7 +90,7 @@ const vi: PartialLocaleType = {
     Send: "Gửi",
     Config: {
       Reset: "Xóa trí nhớ",
-      SaveAs: "Lưu dưới dạng mặt nạ",
+      SaveAs: "Lưu dưới dạng chủ đề",
     },
     IsContext: "Lời nhắc đã đặt sẵn",
   },
@@ -106,8 +106,8 @@ const vi: PartialLocaleType = {
       SubTitle: "Có thể xuất khẩu dưới dạng văn bản Markdown hoặc hình ảnh PNG",
     },
     IncludeContext: {
-      Title: "Bao gồm ngữ cảnh mặt nạ",
-      SubTitle: "Có hiển thị ngữ cảnh mặt nạ trong tin nhắn không",
+      Title: "Bao gồm ngữ cảnh chủ đề",
+      SubTitle: "Có hiển thị ngữ cảnh chủ đề trong tin nhắn không",
     },
     Steps: {
       Select: "Chọn",
@@ -240,18 +240,18 @@ const vi: PartialLocaleType = {
 
       LocalState: "Dữ liệu cục bộ",
       Overview: (overview: any) => {
-        return `${overview.chat} cuộc trò chuyện, ${overview.message} tin nhắn, ${overview.prompt} lệnh, ${overview.mask} mặt nạ`;
+        return `${overview.chat} cuộc trò chuyện, ${overview.message} tin nhắn, ${overview.prompt} lệnh, ${overview.mask} chủ đề`;
       },
       ImportFailed: "Nhập không thành công",
     },
     Mask: {
       Splash: {
-        Title: "Trang khởi động mặt nạ",
-        SubTitle: "Hiển thị trang khởi động mặt nạ khi tạo cuộc trò chuyện mới",
+        Title: "Trang khởi động chủ đề",
+        SubTitle: "Hiển thị trang khởi động chủ đề khi tạo cuộc trò chuyện mới",
       },
       Builtin: {
-        Title: "Ẩn mặt nạ tích hợp",
-        SubTitle: "Ẩn mặt nạ tích hợp trong danh sách tất cả mặt nạ",
+        Title: "Ẩn chủ đề tích hợp",
+        SubTitle: "Ẩn chủ đề tích hợp trong danh sách tất cả chủ đề",
       },
     },
     Prompt: {
@@ -517,11 +517,11 @@ const vi: PartialLocaleType = {
     },
   },
   Mask: {
-    Name: "Mặt nạ",
+    Name: "chủ đề",
     Page: {
-      Title: "Mặt nạ vai trò đã định sẵn",
+      Title: "chủ đề vai trò đã định sẵn",
       SubTitle: (count: number) => `${count} định nghĩa vai trò đã định sẵn`,
-      Search: "Tìm kiếm mặt nạ vai trò",
+      Search: "Tìm kiếm chủ đề vai trò",
       Create: "Tạo mới",
     },
     Item: {
@@ -534,9 +534,9 @@ const vi: PartialLocaleType = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `Chỉnh sửa mặt nạ định sẵn ${readonly ? "(chỉ đọc)" : ""}`,
-      Download: "Tải xuống mặt nạ",
-      Clone: "Nhân bản mặt nạ",
+        `Chỉnh sửa chủ đề định sẵn ${readonly ? "(chỉ đọc)" : ""}`,
+      Download: "Tải xuống chủ đề",
+      Clone: "Nhân bản chủ đề",
     },
     Config: {
       Avatar: "Hình đại diện vai trò",
@@ -554,8 +554,8 @@ const vi: PartialLocaleType = {
           "Sau khi ẩn, cuộc trò chuyện đã định sẵn sẽ không xuất hiện trong giao diện trò chuyện",
       },
       Share: {
-        Title: "Chia sẻ mặt nạ này",
-        SubTitle: "Tạo liên kết trực tiếp đến mặt nạ này",
+        Title: "Chia sẻ chủ đề này",
+        SubTitle: "Tạo liên kết trực tiếp đến chủ đề này",
         Action: "Sao chép liên kết",
       },
     },
@@ -566,8 +566,8 @@ const vi: PartialLocaleType = {
     NotShow: "Không hiển thị nữa",
     ConfirmNoShow:
       "Xác nhận vô hiệu hóa? Sau khi vô hiệu hóa, bạn có thể bật lại bất cứ lúc nào trong cài đặt.",
-    Title: "Chọn một mặt nạ",
-    SubTitle: "Bắt đầu ngay, va chạm với suy nghĩ của linh hồn đứng sau mặt nạ",
+    Title: "Chọn một chủ đề",
+    SubTitle: "Bắt đầu ngay, va chạm với suy nghĩ của linh hồn đứng sau chủ đề",
     More: "Xem tất cả",
   },
 
