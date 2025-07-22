@@ -239,7 +239,7 @@ export function Artifacts() {
           shadow
           onClick={() => previewRef.current?.reload()}
         />
-        <div className={styles["artifacts-title"]}>Ai PÉTRUS KÝ</div>
+        <div className={styles["artifacts-title"]}>AI PÉTRUS KÝ</div>
         <ArtifactsShareButton
           id={id}
           getCode={() => code}
