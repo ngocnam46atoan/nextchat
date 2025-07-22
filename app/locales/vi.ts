@@ -517,9 +517,9 @@ const vi: PartialLocaleType = {
     },
   },
   Mask: {
-    Name: "chủ đề",
+    Name: "Chủ đề",
     Page: {
-      Title: "chủ đề vai trò đã định sẵn",
+      Title: "Chủ đề vai trò đã định sẵn",
       SubTitle: (count: number) => `${count} định nghĩa vai trò đã định sẵn`,
       Search: "Tìm kiếm chủ đề vai trò",
       Create: "Tạo mới",
